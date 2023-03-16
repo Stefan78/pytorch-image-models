@@ -1529,7 +1529,7 @@ def _create_recurrent_vision_transformer(variant, pretrained=False, **kwargs):
 def vit_extra_tiny(pretrained=False, **kwargs):
     """ ViT-Extra_Tiny      #for testing the new architecture on CIFAR-10
     """
-    model_kwargs = dict(img_size=32, patch_size=4, in_chans=3, num_classes=10, embed_dim=192, depth=6, num_heads=3)
+    model_kwargs = dict(img_size=48, patch_size=6, in_chans=3, num_classes=10, embed_dim=72, depth=6, num_heads=6)
     model = VisionTransformer(**model_kwargs)
     return model
 

@@ -1547,7 +1547,7 @@ def recurrent_vit_extra_tiny(pretrained=False, **kwargs):
 def recurrent_vit_tiny_patch16_224(pretrained=False, **kwargs):
     """ ViT-Tiny (Vit-Ti/16)
     """
-    model_kwargs = dict(patch_size=16, embed_dim=192, depth=12, num_heads=3, **kwargs)
+    model_kwargs = dict(embed_dim=192, depth=12, num_heads=3, **kwargs)
     model = _create_recurrent_vision_transformer('vit_tiny_patch16_224', pretrained=pretrained, **model_kwargs)
     return model
 
